@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic Validation For JS</title>
+  </head>
+  <script>
+    function Validation() {
+      //function and nameoffunction
+      var username = document.getElementById("uname"); //creating the variables
+      //uname is object reference to input html tag and we pass the id here (id name is uname)
+      var password = document.getElementById("pass"); //creating the variables
+      //pass is object reference to input html tag and we pass the id here (id name is pass)
+      if (username.value == "" || password.value == "") {
+        alert("no blank fields values are allowed");
+        return false;
+      } else {
+        return true;
+      }
+    }
+  </script>
+  <body>
+    <form onsubmit="return Validation()" action="counter.html">
+      <input type="text" id="uname" placeholder="enter your username" />
+      <br /><br />
+      <input type="password" id="pass" placeholder="enter your password" />
+      <br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

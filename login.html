@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <style>
+        .main{
+            background-color: aqua;
+            border: 1px solid black;
+            height:1000px;
+            bottom: unset;;
+
+        }
+    
+          
+        
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <h1>ashabooks and staritionary</h1>
+        <a href="rigestration form.html"></a>
+        <p>The leading  text Books and stationary,books distributionors and the most popular retail mega bookstorre chain</p>
+        <p>books </p>
+        <p>User Name</p>
+        <input type="text" id="User Name">
+        <p>password</p>
+        <input type="text" id="password">
+        <button type="button" id="button" onclick="change()">Login</button>
+        <br>
+        <p id="para" >*login before accesing</p>
+        
+       
+
+   
+
+    </div>
+    
+</body>
+</html>
+<script>
+    function change()
+    {
+    var x =UserName;
+    document.getElementById("x").value;
+    var y =passwore;
+    document.getElementById(y).value;
+    if(x+"")
+    {
+        // window.location.href="ashabooks.html";
+document.getElementById('para').innerHTML="you can logged in as"+x+".";
+document.getElementById("UserName").disabled=true;
+document.getElementById("password").disabled=true;
+document.getElementById("button").disabled=true;
+
+    }
+    else
+    {
+        alert("please enter the details");
+
+    }
+}
+
+
+</script>
